@@ -114,7 +114,9 @@ svg{
         height: 30rem;
     }
 }
-
+.logo__img:hover{
+    animation: animame 1.5s linear infinite;
+}
 /* Nosotros*/
 
 .nosotros{
@@ -266,4 +268,11 @@ input{
 .producto__texto{
     grid-area: texto;
 }
+}
+/*Animacion*/
+@keyframes animame{
+    form{}
+    to {
+        transform: rotateY(360deg);
+    }
 }
