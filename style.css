@@ -151,26 +151,10 @@ margin: 2rem 10% 3rem 10%;
 
 /*Galeria*/
 
-.galeria{
-    display: flex;
-    flex-direction: column;
-}
-.galeria__img{
-    width: auto;
-    height: auto;
+.g-img{
     padding: 2rem 1rem 0 1rem;
 }
-@media(min-width: 768px){
-    .galeria{
-        display: grid;
-        grid-auto-flow: column;
-        margin: auto;
-    }
-    .galeria__img{
-        width: 95%;
-        height: 80%;
-    }
-}
+
 
 /*Producto*/
 .producto{
