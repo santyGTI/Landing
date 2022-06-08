@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" >
     <link rel="stylesheet" href="style.css" >
     <link rel="shortcut icon" href="/img/logo.jpeg">
 </head>
@@ -29,31 +30,32 @@
     </header>
    
     <main>
-
-        <form action="#" method="get" enctype="multipart/form-data">
-        <fieldset class="form">
-          <h1 class="form__titulo"><legend>Contacta con nosotros</legend></h1>
-            <div class="form__nombre">
-                <label  for="Nombre">Nombre</label>
-                <input type="text">
+       <div class="formulario">
+           <h1 class="centrado">Contacta con nosotros</h1>
+            <div class="row">
+                <div class="col">
+                    <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" id="nombre" class="form-control" placeholder="Nombre" aria-label="First name">
+                </div>
+                <div class="col">
+                    <label for="apellido" id="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                </div>
             </div>
-            <div class="form__apellido">
-                <label for="Apellido">Apellido</label>
-                <input type="text">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@ejemplo.com">
             </div>
-            <div class="form__email">
-                <label for="email">Email</label>
-                <input type="email"> 
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
-            <div class="form__mensaje">
-                <label for="mensaje">Mensaje</label>
-            </div>  
-                <textarea class="form__textarea " name="mensaje" cols="30" rows="10"></textarea>             
-              
-            <input class="form__boton boton" type="submit" name="enviar" value="enviar">
-        </fieldset>
-
-    </form>
+            <div class="col-12 fboton">
+                <button class=" btn btn-primary" type="submit">Enviar</button>
+              </div>
+            
+        </div>
+    
     </main>
     <footer class="foot">
   
@@ -72,5 +74,6 @@
     
 
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

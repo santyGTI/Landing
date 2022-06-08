@@ -140,73 +140,15 @@ svg{
 margin: 2rem 10% 3rem 10%;
 }
 /*Contacto*/
-input{
-    width: 70%;
-}
-.form{ 
-    max-width: 80rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5rem;
-    gap: 0.7rem;
-}
-.form__boton{
-    align-self: end;
-}
-.form__nombre,.form__apellido, .form__email{
-    align-self: stretch;
-}
-@media(min-width: 480px){
-.form{ 
-    max-width: 85rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.7rem;
-    margin: auto;
-    font-size: 1.5rem;
-    text-align: center;
-    grid-template-areas: "titulo titulo"
-                         "Nombre apellido"
-                         "email email"
-                         "mensaje mensaje"
-                         "textarea textarea"
-                         "boton boton"  ;
-}   
-.form__titulo{
-    grid-area: titulo;
-    text-align: center;
-}
-.form__nombre{
-    grid-area: Nombre;
-    justify-content: stretch;
-}
-.form__apellido{
-    grid-area: apellido;
-}
-.form__email{
-    grid-area: email;
-    margin-right: 50%;
-    justify-self: inherit;
 
+.formulario{ 
+    max-width: 80rem;
+    margin: 1rem 10% 1rem 10%;
 }
-.form__mensaje{
-    grid-area:mensaje;
-    text-align: left;
-    margin: 0 95% 0 5%;
+.fboton{
+    text-align-last: end;
 }
-.form__textarea{
-    grid-area:textarea ;
-    width: 90%;
-    margin: auto;
-}
-.form__boton{
-    justify-self: end;
-    grid-area: boton;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    width: auto;
-}
-}
+
 /*Galeria*/
 
 .galeria{
