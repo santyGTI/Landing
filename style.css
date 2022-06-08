@@ -84,6 +84,7 @@ svg{
     margin-top: 1rem;
 }
 .nav{
+    flex-direction: column;
     background-color: var(--secundario);
     margin: 2rem 0 2rem 0;
 }
