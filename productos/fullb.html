@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Tapestry&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" > 
     <link rel="stylesheet" href="../style.css" >
     <link rel="shortcut icon" href="/img/logo.jpeg">
 </head>
@@ -29,21 +30,27 @@
             </nav>
         </header>
         <main class="producto">
-            <h1 class="producto__titulo centrado"> Full Body </h1>
-                <div class="producto__galeria" style="display: flex;">
-                    <a href="../img/F1.jpg" target="_blank">
-                        <img class="producto__img" src="../img/F1.jpg" alt="FotoU1">
-                    </a>
-                    <a href="../img/F2.jpg" target="_blank">
-                        <img class="producto__img" src="../img/F2.jpg" alt="FotoU1">
-                    </a>
-                    <a href="../img/F3.jpg" target="_blank">
-                        <img class="producto__img" src="../img/F3.jpg" alt="FotoU1">
-                    </a>
-                </div>
-                
-                <p class="producto__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia enim nobis in alias. Voluptatem minus non, praesentium hic, iure voluptatibus provident obcaecati, nesciunt totam velit odio illo recusandae eligendi officia!           </p>
-                        
+            <div class="container-fluid">
+                <h1 class="producto__titulo centrado"> Full Body </h1>
+                    <div class="row" >
+                        <div class="col-md-4">
+                            <a href="../img/F1.jpg" target="_blank">
+                                <img class="producto__img" src="../img/F1.jpg" alt="FotoF1">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="../img/F2.jpg" target="_blank">
+                                <img class="producto__img" src="../img/F2.jpg" alt="FotoF2">
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="../img/F3.jpg" target="_blank">
+                                <img class="producto__img" src="../img/F3.jpg" alt="FotoF3">
+                            </a>
+                        </div>
+                    </div>
+                    <p class="producto__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia enim nobis in alias. Voluptatem minus non, praesentium hic, iure voluptatibus provident obcaecati, nesciunt totam velit odio illo recusandae eligendi officia!           </p>
+            </div>        
         </main>
         <footer class="foot">
     
@@ -62,6 +69,6 @@
         
 
         </footer>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
