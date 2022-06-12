@@ -155,6 +155,7 @@ font-size: 2rem;
 
 .producto__titulo{  
     text-align: center;
+    margin-bottom: 2rem;
 }
 .producto__img{
     width: 95%;
@@ -162,6 +163,7 @@ font-size: 2rem;
 }
 
 .producto__texto{
+    margin-top: -2rem;
    text-align: center;
 }
 
