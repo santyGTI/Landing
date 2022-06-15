@@ -1,14 +1,5 @@
-/*Root*/
-:root{
-    --primario: #FFF9B6 ;
-    --secundario: #FFE699  ;
-    --terciario:#e2cb86;
-    --titulo: 'Tapestry', cursive; ;
-    --Parrafo:'Indie Flower', cursive; ;
-    --blanco: #ffff;
-    --negro: #000 ;
-
-}
+/*Colores*/
+@import "colores";
 /*GLOBALES*/
 html{
     font-size: 62.5%;
@@ -19,10 +10,10 @@ html{
    padding: 0;
 }  
 body{
-    background-color: var(--primario);
+    background-color: $primario;
 }
 h1 , h2 , h3 {
-    font-family: var(--titulo);
+    font-family: $titulo;
 }
 h1{ font-size: 3rem; 
     text-decoration: underline 0.2rem solid ;
@@ -31,13 +22,13 @@ h1{ font-size: 3rem;
 h2{font-size: 2.2rem;}
 h3{font-size: 1.8rem;}
 p{
-    font-family: var(--Parrafo);
+    font-family: $Parrafo;
     font-size: 1.5rem;
 }
 a{
-    color: var(--negro);
+    color: $negro;
     text-decoration: none;
-    font-family: var(--Parrafo);
+    font-family: $Parrafo;
     font-size: 1.5rem;
 }
 @media(min-width: 480px){
@@ -45,13 +36,13 @@ a{
     h2{font-size: 5.8rem;}
     h3{font-size: 3.4rem;}
 p{
-    font-family: var(--Parrafo);
+    font-family: $Parrafo;
     font-size: 2.5rem;
 }
 a{
-    color: var(--negro);
+    color: $negro;
     text-decoration: none;
-    font-family: var(--Parrafo);
+    font-family: $Parrafo;
     font-size: 3rem;
 }
 }
@@ -80,20 +71,21 @@ svg{
 .foot{
     display: flex;
     justify-content: space-evenly;
-    background-color: var(--secundario);
+    background-color: $secundario;
     margin-top: 1rem;
 }
 .nav{
     flex-direction: column;
-    background-color: var(--secundario);
+    background-color: $secundario;
     margin: 2rem 0 2rem 0;
 }
 .boton{
     list-style: none;
+    &:hover{
+        background-color: $primario;
+    }
 }
-.boton :hover{
-    background-color: var(--primario);
-}
+
 .nav__alin{
     display: flex;
     flex-direction: row;
@@ -108,15 +100,15 @@ svg{
     width: 20rem;
     height: 20rem;
     align-items: center;
+    &:hover{
+        animation: animame 1.5s linear infinite;
+    }
 }
 @media(min-width: 320px ){
     #principal{
         width: 30rem;
         height: 30rem;
     }
-}
-.logo__img:hover{
-    animation: animame 1.5s linear infinite;
 }
 /* Nosotros*/
 .nosotros__img {
