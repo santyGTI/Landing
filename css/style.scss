@@ -134,8 +134,11 @@ font-size: 2rem;
 .g-img{
     padding: 2rem 1rem 0 1rem;
 }
-
-
+.carousel-indicators{
+    img{
+    max-height: 320px;
+    }
+}
 /*Producto*/
 .producto{
     display: flex;
@@ -143,21 +146,22 @@ font-size: 2rem;
     align-items: center;
     padding: 2rem;
     gap: 2rem;
+    .producto__titulo{  
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .producto__img{
+        width: 95%;
+        height: 80%;
+    }
+    
+    .producto__texto{
+        margin-top: -2rem;
+       text-align: center;
+    }
+    
 }
 
-.producto__titulo{  
-    text-align: center;
-    margin-bottom: 2rem;
-}
-.producto__img{
-    width: 95%;
-    height: 80%;
-}
-
-.producto__texto{
-    margin-top: -2rem;
-   text-align: center;
-}
 
 /*Animacion*/
 @keyframes animame{
