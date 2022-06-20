@@ -47,16 +47,20 @@ a {
   h1 {
     font-size: 6.4rem;
   }
+
   h2 {
     font-size: 5.8rem;
   }
+
   h3 {
     font-size: 3.4rem;
   }
+
   p {
     font-family: "Indie Flower", cursive;
     font-size: 2.5rem;
   }
+
   a {
     color: #000;
     text-decoration: none;
@@ -64,18 +68,10 @@ a {
     font-size: 3rem;
   }
 }
-
 .icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 svg {
@@ -89,7 +85,6 @@ svg {
     height: 4rem;
   }
 }
-
 .tm {
   margin-top: 2rem;
 }
@@ -99,21 +94,14 @@ svg {
 }
 
 .foot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   background-color: #FFE699;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 .nav {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background-color: #FFE699;
   margin: 2rem 0 2rem 0;
 }
@@ -121,21 +109,14 @@ svg {
 .boton {
   list-style: none;
 }
-
 .boton:hover {
   background-color: #FFF9B6;
 }
 
 .nav__alin {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
   text-decoration: none;
 }
 
@@ -146,11 +127,8 @@ svg {
 .logo__img {
   width: 20rem;
   height: 20rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .logo__img:hover {
   -webkit-animation: animame 1.5s linear infinite;
           animation: animame 1.5s linear infinite;
@@ -162,7 +140,6 @@ svg {
     height: 30rem;
   }
 }
-
 /* Nosotros*/
 .nosotros__img {
   max-width: 80%;
@@ -181,60 +158,56 @@ svg {
 }
 
 .fboton {
-  text-align-last: end;
+  -moz-text-align-last: end;
+       text-align-last: end;
 }
 
 /*Galeria*/
+.contenedor {
+  margin: 0 12.5% 0 12.5%;
+  max-width: 75%;
+}
+
 .g-img {
   padding: 2rem 1rem 0 1rem;
 }
 
+.carousel {
+  margin: 1rem 25% 1rem 25%;
+}
+.carousel .carousel-inner img {
+  max-height: 576px;
+}
+
 /*Producto*/
 .producto {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
   gap: 2rem;
 }
-
-.producto__titulo {
+.producto .producto__titulo {
   text-align: center;
   margin-bottom: 2rem;
 }
-
-.producto__img {
+.producto .producto__img {
   width: 95%;
   height: 80%;
 }
-
-.producto__texto {
+.producto .producto__texto {
   margin-top: -2rem;
   text-align: center;
 }
 
 /*Animacion*/
 @-webkit-keyframes animame {
-  form {
-  }
   to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 @keyframes animame {
-  form {
-  }
   to {
-    -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

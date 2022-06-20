@@ -130,13 +130,17 @@ font-size: 2rem;
 }
 
 /*Galeria*/
-
+.contenedor {
+    max-width: 245rem;
+}
 .g-img{
     padding: 2rem 1rem 0 1rem;
 }
-.carousel-indicators{
-    img{
-    max-height: 320px;
+
+.carousel{
+    margin: 1rem 25% 1rem 25%;
+    .carousel-inner{
+    img{max-height: 576px;}
     }
 }
 /*Producto*/
@@ -165,7 +169,6 @@ font-size: 2rem;
 
 /*Animacion*/
 @keyframes animame{
-    form{}
     to {
         transform: rotateY(360deg);
     }
