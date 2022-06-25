@@ -12,6 +12,9 @@ html{
 body{
     background-color: $primario;
 }
+main{
+    margin-bottom: 2rem;
+}
 h1 , h2 , h3 {
     font-family: $titulo;
 }
@@ -72,7 +75,8 @@ svg{
     display: flex;
     justify-content: space-evenly;
     background-color: $secundario;
-    margin-top: 2rem;
+    .icon{  margin-top: 2rem; }
+  
 }
 .nav{
     flex-direction: column;
@@ -124,46 +128,25 @@ font-size: 2rem;
 .formulario{ 
     max-width: 80%;
     margin: 1rem 10% 1rem 10%;
+    .fboton{
+        text-align-last: end;
+    }
 }
-.fboton{
-    text-align-last: end;
-}
+
 
 /*Galeria*/
 .contenedor {
     max-width: 245rem;
-}
-.g-img{
-    padding: 2rem 1rem 0 1rem;
-}
-
-.carousel{
-    margin: 1rem 25% 1rem 25%;
-    .carousel-inner{
-    img{max-height: 576px;}
+    .carousel{
+        margin: 1rem 35% 1rem 35%;
+        .carousel-inner{
+        img{max-height: 576px;}
+        }
     }
 }
 /*Producto*/
-.producto{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    padding: 2rem;
-    gap: 2rem;
-    .producto__titulo{  
-        text-align: center;
-        margin-bottom: 2rem;
-    }
-    .producto__img{
-        width: 95%;
-        height: 80%;
-    }
-    
-    .producto__texto{
-        margin-top: -2rem;
-       text-align: center;
-    }
-    
+.card-img-top{
+    max-height: 545px;
 }
 
 
