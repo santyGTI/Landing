@@ -11,9 +11,10 @@ html{
 }  
 body{
     background-color: $primario;
-}
+
 main{
     margin-bottom: 2rem;
+}
 }
 h1 , h2 , h3 {
     font-family: $titulo;
@@ -34,10 +35,10 @@ a{
     font-family: $Parrafo;
     font-size: 1.5rem;
 }
-@media(min-width: 480px){
+/*@media(min-width: 480px){
     h1{ font-size: 6.4rem;}
     h2{font-size: 5.8rem;}
-    h3{font-size: 3.4rem;}
+    h3{font-size: 3.4rem;}*/
 p{
     font-family: $Parrafo;
     font-size: 2.5rem;
@@ -48,7 +49,7 @@ a{
     font-family: $Parrafo;
     font-size: 3rem;
 }
-}
+
 .icon{
     display: flex;  
     flex-direction: column;
