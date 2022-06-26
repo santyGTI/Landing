@@ -1,4 +1,4 @@
-/*Colores*/
+/*Var*/
 /*GLOBALES*/
 html {
   font-size: 62.5%;
@@ -12,8 +12,7 @@ html {
 body {
   background-color: #FFF9B6;
 }
-
-main {
+body main {
   margin-bottom: 2rem;
 }
 
@@ -32,12 +31,12 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 p {
   font-family: "Indie Flower", cursive;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 a {
@@ -53,11 +52,11 @@ a {
   }
 
   h2 {
-    font-size: 5.8rem;
+    font-size: 5.6rem;
   }
 
   h3 {
-    font-size: 3.4rem;
+    font-size: 4.8rem;
   }
 
   p {
@@ -75,6 +74,7 @@ a {
 .icon {
   display: flex;
   flex-direction: column;
+  justify-content: auto;
   align-items: center;
 }
 
@@ -99,6 +99,7 @@ svg {
 
 .foot {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   background-color: #FFE699;
 }
@@ -129,13 +130,12 @@ svg {
 .logo {
   text-align: center;
 }
-
-.logo__img {
+.logo .logo__img {
   width: 20rem;
   height: 20rem;
   align-items: center;
 }
-.logo__img:hover {
+.logo .logo__img:hover {
   -webkit-animation: animame 1.5s linear infinite;
           animation: animame 1.5s linear infinite;
 }
@@ -179,8 +179,12 @@ svg {
 }
 
 /*Producto*/
-.card-img-top {
+.container-fluid .card-img-top {
   max-height: 545px;
+}
+
+.card {
+  margin: 1rem;
 }
 
 /*Animacion*/

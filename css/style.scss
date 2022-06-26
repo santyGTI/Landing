@@ -1,5 +1,11 @@
-/*Colores*/
-@import "colores";
+/*Var*/
+@import "variables";
+
+@mixin disp ($display,$direction,$justify){
+    display: $display;
+    flex-direction:$direction ;
+    justify-content: $justify;
+}
 /*GLOBALES*/
 html{
     font-size: 62.5%;
@@ -24,10 +30,10 @@ h1{ font-size: 3rem;
       
 }
 h2{font-size: 2.2rem;}
-h3{font-size: 1.8rem;}
+h3{font-size: 1.6rem;}
 p{
     font-family: $Parrafo;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 a{
     color: $negro;
@@ -35,10 +41,13 @@ a{
     font-family: $Parrafo;
     font-size: 1.5rem;
 }
-/*@media(min-width: 480px){
-    h1{ font-size: 6.4rem;}
-    h2{font-size: 5.8rem;}
-    h3{font-size: 3.4rem;}*/
+@media(min-width: 480px){
+   @for $i from 1 through 3{
+    h#{$i}{
+        font-size:$fontsize - (0.8 * $i);
+    }
+   }
+   
 p{
     font-family: $Parrafo;
     font-size: 2.5rem;
@@ -49,10 +58,9 @@ a{
     font-family: $Parrafo;
     font-size: 3rem;
 }
-
+}
 .icon{
-    display: flex;  
-    flex-direction: column;
+   @include disp(flex,column,auto);
     align-items: center;
 }
 svg{
@@ -73,8 +81,7 @@ svg{
     text-align: center;
 }
 .foot{
-    display: flex;
-    justify-content: space-evenly;
+    @include disp(flex,row ,space-evenly );
     background-color: $secundario;
     .icon{  margin-top: 2rem; }
   
@@ -92,16 +99,12 @@ svg{
 }
 
 .nav__alin{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include disp(flex,row ,space-around);
     text-decoration: none;
 }
 .logo{
    text-align: center;
-}
-
-.logo__img{
+   .logo__img{
     width: 20rem;
     height: 20rem;
     align-items: center;
@@ -109,6 +112,9 @@ svg{
         animation: animame 1.5s linear infinite;
     }
 }
+}
+
+
 @media(min-width: 320px ){
     #principal{
         width: 30rem;
@@ -146,10 +152,14 @@ font-size: 2rem;
     }
 }
 /*Producto*/
+.container-fluid{
 .card-img-top{
     max-height: 545px;
 }
-
+}
+.card{
+    margin: 1rem;
+}
 
 /*Animacion*/
 @keyframes animame{
