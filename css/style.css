@@ -1,4 +1,6 @@
 /*Var*/
+/*Mapa*/
+/*Mixin*/
 /*GLOBALES*/
 html {
   font-size: 62.5%;
@@ -20,14 +22,18 @@ h1, h2, h3 {
   font-family: "Tapestry", cursive;
 }
 
-h1 {
+/*Extend*/
+.h1, h1 {
   font-size: 3rem;
+}
+
+h1 {
   -webkit-text-decoration: underline 0.2rem solid;
           text-decoration: underline 0.2rem solid;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
 }
 
 h3 {
@@ -115,9 +121,11 @@ svg {
 
 .boton {
   list-style: none;
+  background-color: #FFE699;
 }
 .boton:hover {
   background-color: #FFF9B6;
+  margin-bottom: -1rem;
 }
 
 .nav__alin {
