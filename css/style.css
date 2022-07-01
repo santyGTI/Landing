@@ -176,16 +176,21 @@ svg {
 }
 
 /*Galeria*/
-.contenedor {
-  max-width: 245rem;
-}
 .contenedor .carousel {
-  margin: 1rem 35% 1rem 35%;
-}
-.contenedor .carousel .carousel-inner img {
-  max-height: 576px;
+  margin: 0;
 }
 
+@media (min-width: 480px) {
+  .contenedor {
+    max-width: 245rem;
+  }
+  .contenedor .carousel {
+    margin: 1rem 35% 1rem 35%;
+  }
+  .contenedor .carousel .carousel-inner img {
+    max-height: 576px;
+  }
+}
 /*Producto*/
 .container-fluid .card-img-top {
   max-height: 545px;
